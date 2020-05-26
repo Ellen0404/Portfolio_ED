@@ -16,7 +16,7 @@ nav.navbar.navbar-default {
   
 }
 nav.navbar.color{
-  color: #ac6161;
+  color: #a0b603;
 }
 
 .footer {
@@ -31,14 +31,17 @@ nav.navbar.color{
   left: 0;
   right: 0;
   padding: 3px;
-  background: #ac6161;
+  background: #a0b603;
 }
 
 .card {
   width: 30%;
   height: 300px;
+  font-weight: bold;
+  color: white;
   background: grey;
   border-radius: 5px;
+  background-image: linear-gradient();
   background-image: url(https://drscdn.500px.org/photo/435236/q%3D80_m%3D1500/v2?webp=true&sig=67031bdff6f582f3e027311e2074be452203ab637c0bd21d89128844becf8e40);
   background-size: cover;
   background-position: center center;
@@ -75,8 +78,7 @@ nav.navbar.color{
   position:relative
 }
 .work-thumb img{
- 
-  border:10px solid #fff
+  border:10px solid #fff;
 }
 .work-thumb .work-text{
   text-align:center;

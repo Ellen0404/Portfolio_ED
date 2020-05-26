@@ -7,8 +7,10 @@ const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg)
 
 
 const CardBlock = (props) => {
-    const { config = {} } = props;
-    const { field = [] } = config;
+    const {
+        image, title, link, tools, description1, description2
+    } = props;
+    // const { field = [] } = config;
 
 
     const [spring, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
@@ -21,22 +23,25 @@ const CardBlock = (props) => {
                 onMouseLeave={() => set({ xys: [0, 0, 1] })}
                 style={{
                     transform: spring.xys.interpolate(trans),
-                    backgroundImage: `url(${props.image})`
+                    backgroundImage: `url(${image})`,
+
                 }}
             >
                 <div className="container justify-content-center">
                     <div>
-                        <h1>
-                            {props.title}
-                        </h1>
-                        <div>
-                            {field.map(element => (
-                                <h6>{element}</h6>
-                            )
-                            )}
-                        </div>
-                    </div>
+                        <br />
+                        <h2 className="text-center">
+                            {title}
+                        </h2>
+                        <h3>{tools}</h3>
+                        <p>{description1}<br />{description2}</p>
 
+                    </div>
+                    <br />
+                    <div style={{ marginBottom: 0 }}>
+                        <a href={link} className="ui olive button">View Project</a>
+
+                    </div>
 
                 </div>
             </animated.div>

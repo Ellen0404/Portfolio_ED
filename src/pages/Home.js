@@ -9,12 +9,10 @@ import ContactFooter from "../components/ContactFooter";
 
 import { Container } from "react-bootstrap";
 
-const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
-const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+
 
 const Home = () => {
 
-    const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
 
     return (
         <>
@@ -90,7 +88,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div class="section">
+            {/* <div class="section">
                 <div class="container">
                     <div class="row">
                         <CardBlock
@@ -106,7 +104,6 @@ const Home = () => {
                                 ]
                             }
                             }
-
                         />
                         <CardBlock
                             title="JavaScript"
@@ -141,6 +138,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+ */}
+
             <div class="section portfolio-section">
                 <div class="container space">
                     <div class="row mb-5 justify-content-center">
@@ -150,25 +149,27 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <Container>
-                    <div class="row mb-5 no-gutters">
+                <div class="section">
+                    <div class="container">
+                        <div class="row">
 
-                        <ProjectCard
-                            link="https://tripoint.herokuapp.com/"
-                            title="TriPoint"
-                            tools="Node/Express/MySQL/Sequelize/Handlebars.js/ JQuery"
-                            description1="MySQL db combined with a 3rd party API."
-                            description2="Sequelize and Express loaded app"
-                            image="https://res.cloudinary.com/dddtjci2s/image/upload/v1589858022/computer-desk-196658_uh4wwv.jpg" />
-                        <ProjectCard
-                            link="https://ellen0404.github.io/Employee-Directory_ED/"
-                            title="Employee Directory"
-                            tools="React/ ES6/ AJAX/ Semantic UI"
-                            description1="React app to view, search, filter,"
-                            description2=" delete employees"
-                            image="https://res.cloudinary.com/dddtjci2s/image/upload/v1589857801/technical-plan-drawn-on-paper-located-near-tablet-and-laptop-3850240_nsuiaz.jpg" />
+                            <ProjectCard
+                                link="https://tripoint.herokuapp.com/"
+                                title="TriPoint"
+                                tools="Node/Express/MySQL/Sequelize/Handlebars.js/ JQuery"
+                                description1="MySQL db combined with a 3rd party API."
+                                description2="Sequelize and Express loaded app"
+                                image="https://res.cloudinary.com/dddtjci2s/image/upload/v1589858022/computer-desk-196658_uh4wwv.jpg" />
+                            <ProjectCard
+                                link="https://ellen0404.github.io/Employee-Directory_ED/"
+                                title="Employee Directory"
+                                tools="React/ ES6/ AJAX/ Semantic UI"
+                                description1="React app to view, search, filter,"
+                                description2=" delete employees"
+                                image="https://res.cloudinary.com/dddtjci2s/image/upload/v1589857801/technical-plan-drawn-on-paper-located-near-tablet-and-laptop-3850240_nsuiaz.jpg" />
+                        </div>
                     </div>
-                </Container>
+                </div>
             </div>
             <ContactFooter />
             <Footer />
