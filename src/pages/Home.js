@@ -48,7 +48,7 @@ const Home = () => {
                                 className="script-bf-box"
                                 style={{ transform: radians.interpolate(interp(items[1])) }}>
                                 <p className=" col-sm-3 mb-0  move" data-aos="fade-up" data-aos-delay="200">
-                                    <a href="/images/Elena Demidionok_developer.docx.pdf" target="_blank"
+                                    <a href={`${process.env.PUBLIC_URL}/images/Elena Demidionok_developer.docx.pdf`} target="_blank"
                                         className="ui olive  button px-4 py-3">Resume</a>
                                 </p>
                             </animated.div>
@@ -81,7 +81,7 @@ const Home = () => {
                         <div className="col-md-6 order-md-2" data-aos="fade-up" data-aos-delay="400">
                             <figure className="img-dotted-bg">
                                 <br></br>
-                                <img src="/public/images/EllenDphoto_webformat.jpg" width="300" height="400" alt="altimg"
+                                <img src={`${process.env.PUBLIC_URL}/images/EllenDphoto_webformat.jpg`} width="300" height="400" alt="altimg"
                                     className="img-fluid" />
                             </figure>
                         </div>

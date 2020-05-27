@@ -32,7 +32,7 @@ const Project = () => {
                                 tools="JS/API/AJAX"
                                 description1="API based weather app."
                                 description2="Shows today's and 5 days forecast"
-                                image="/images/adventure-calm-clouds-dawn-414171.jpg"
+                                image={`${process.env.PUBLIC_URL}/images/adventure-calm-clouds-dawn-414171.jpg`}
                             />
                             <CardBlock
                                 link="https://github.com/cwright489/Project1.git"
@@ -60,7 +60,7 @@ const Project = () => {
                                 tools="MySQL/ Inquirer/ Node.js"
                                 description1="This app makes it easy for non-developers"
                                 description2="to interact databases."
-                                image="/images/1584395575701.png"
+                                image={`${process.env.PUBLIC_URL}/images/1584395575701.png`}
                             />
                             <CardBlock
                                 link="https://calm-headland-85094.herokuapp.com/"
