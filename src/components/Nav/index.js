@@ -13,7 +13,7 @@ const Nav = () => {
                         <ul className="navbar-nav ml-auto">
 
                             <li className="nav-item color" >
-                                <NavLink to="/"
+                                <NavLink to={process.env.PUBLIC_URL + '/'}
                                     className="nav-link "
                                     isActive={() => window.location.pathname === "/"}
                                     activeClassName="active "
@@ -22,10 +22,10 @@ const Nav = () => {
     </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/project" className="nav-link">Projects</NavLink>
+                                <NavLink to={process.env.PUBLIC_URL + '/project'} className="nav-link">Projects</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/contact" className="nav-link">Contact</NavLink>
+                                <NavLink to={process.env.PUBLIC_URL + '/contact'} className="nav-link">Contact</NavLink>
                             </li>
                         </ul>
                     </div>
