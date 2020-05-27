@@ -10,7 +10,7 @@ const CardBlock = (props) => {
     const {
         image, title, link, tools, description1, description2
     } = props;
-    // const { field = [] } = config;
+
 
 
     const [spring, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
@@ -39,7 +39,7 @@ const CardBlock = (props) => {
                     </div>
                     <br />
                     <div style={{ marginBottom: 0 }}>
-                        <a href={link} className="ui olive button">View Project</a>
+                        <a href={link} className="ui olive inverted  button">View Project</a>
 
                     </div>
 

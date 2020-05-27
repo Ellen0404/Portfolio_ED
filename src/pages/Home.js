@@ -22,29 +22,33 @@ const Home = () => {
 
                     <div class="col-lg-12 text-center col-sm-12">
                         <div>
-                            <h1 class="mb-4 ">
-                                Hello, I'm Elena Demidionok.<br />
+                            <br></br>
+
+                        </div>
+                        <br></br>
+                        <br></br>
+                        <div className="row  justify-content-center space">
+
+                            <p className="col-sm-3 mb-0  move" data-aos="fade-up" data-aos-delay="200">
+                                <span><i className="icon-github-alt"></i></span>
+                                <a href="https://github.com/Ellen0404" target="_blank"
+                                    className="ui olive  button px-4 py-3">GitHub</a>
+                            </p>
+                            <p className=" col-sm-3 mb-0  move" data-aos="fade-up" data-aos-delay="200">
+                                <a href="/images/Elena Demidionok_developer.docx.pdf" target="_blank"
+                                    className="ui olive  button px-4 py-3">Resume</a>
+                            </p>
+                            <p className="col-sm-3 mb-0  move" data-aos="fade-up" data-aos-delay="200">
+                                <a href="https://www.linkedin.com/in/elena-demidionok/" target="_blank"
+                                    className="ui olive button px-4 py-3">Linkedin</a>
+                            </p>
+
+                        </div>
+                        <br></br>
+                        <h1 className="mb-4 " style={{ color: "#a0b603" }}>
+                            Hello, I'm Elena Demidionok.<br />
                                 Welcome to my digital introduction.
                             </h1>
-                        </div>
-
-                        <div class="row  justify-content-center space">
-
-                            <p class="col-sm-3 mb-0  move" data-aos="fade-up" data-aos-delay="200">
-                                <span><i class="icon-github-alt"></i></span>
-                                <a href="https://github.com/Ellen0404" target="_blank"
-                                    class="ui olive  button px-4 py-3">GitHub</a>
-                            </p>
-                            <p class=" col-sm-3 mb-0  move" data-aos="fade-up" data-aos-delay="200">
-                                <a href="./assets/images/Elena Demidionok_developer.docx.pdf" target="_blank"
-                                    class="ui olive  button px-4 py-3">Resume</a>
-                            </p>
-                            <p class="col-sm-3 mb-0  move" data-aos="fade-up" data-aos-delay="200">
-                                <a href="https://www.linkedin.com/in/elena-demidionok/" target="_blank"
-                                    class="ui olive button px-4 py-3">Linkedin</a>
-                            </p>
-
-                        </div>
 
 
                     </div>
@@ -52,18 +56,19 @@ const Home = () => {
                 </div>
             </div>
 
-            <div class="section">
-                <div class="container space2">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 order-md-2" data-aos="fade-up" data-aos-delay="400">
-                            <figure class="img-dotted-bg">
-                                <img src="./assets/images/EllenDphoto_webformat.jpg" width="400" height="500" alt="Image"
-                                    class="img-fluid" />
+            <div className="section">
+                <div className="container space2">
+                    <div className="row align-items-center">
+                        <div className="col-md-6 order-md-2" data-aos="fade-up" data-aos-delay="400">
+                            <figure className="img-dotted-bg">
+                                <br></br>
+                                <img src="/images/EllenDphoto_webformat.jpg" width="300" height="400" alt="altimg"
+                                    className="img-fluid" />
                             </figure>
                         </div>
-                        <div class="col-md-5 mr-auto" data-aos="fade-up" data-aos-delay="">
-                            <i class="icon-github-alt"></i>
-                            <h2 class="mb-4 section-title">Beauty of the code</h2>
+                        <div className="col-md-5 mr-auto" data-aos="fade-up" data-aos-delay="">
+                            <i className="icon-github-alt"></i>
+                            <h2 className="mb-4 section-title">Beauty of the code</h2>
                             <p>I've found this whole world of creativity and logical connections, I've found that logic could be
                             very
                             creative and beautiful , that was the perfect combination of that I was looking for. So here I
@@ -79,97 +84,108 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div class="section bg-light block-11">
-                <div class="container space">
-                    <div class="row justify-content-center mb-5">
-                        <div class="col-md-8 text-center">
-                            <h2 class="mb-4 section-title">My Development Tools</h2>
+            <div className="section bg-light block-11">
+                <div className="container space">
+                    <div className="row justify-content-center mb-5">
+                        <div className="col-md-8 text-center">
+                            <h2 className="mb-4 section-title">My Development Tools</h2>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* <div class="section">
-                <div class="container">
-                    <div class="row">
-                        <CardBlock
-                            title="Front-End"
-                            image="https://res.cloudinary.com/dddtjci2s/image/upload/v1590432043/rectangular-green-swiss-cheese-leafed-plant-photo-mounted-on-1534924_afxa1k.jpg"
-                            config={{
-                                field: [
-                                    "HTML 5",
-                                    "CSS 3",
-                                    "Bootstrap 4",
-                                    "Semantic UI",
-                                    "React-Bootstrap"
-                                ]
-                            }
-                            }
-                        />
-                        <CardBlock
-                            title="JavaScript"
-                            image="https://res.cloudinary.com/dddtjci2s/image/upload/v1590432043/rectangular-green-swiss-cheese-leafed-plant-photo-mounted-on-1534924_afxa1k.jpg"
-                            config={{
-                                field: [
-                                    "HTML 5",
-                                    "Query/ ES6+",
-                                    "React.js",
-                                    "JSON",
-                                    "AJAX",
-                                    "APIs",
-                                    "DOM"
-                                ]
-                            }}
-                        />
-                        <CardBlock
-                            title="Back-End"
-                            image="https://res.cloudinary.com/dddtjci2s/image/upload/v1590432043/rectangular-green-swiss-cheese-leafed-plant-photo-mounted-on-1534924_afxa1k.jpg"
-                            config={{
-                                field: [
-                                    "Node.js",
-                                    "Express.js",
-                                    "MVC",
-                                    "MySQL",
-                                    "MongoDB",
-                                    "Sequelize"
-                                ]
-                            }
-                            }
-                        />
+            <div className="section">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-4 col-md-6 mb-5 text-center" data-aos="fade-up" data-aos-delay="">
+                            <div className="service">
+                                <span className="icon icon-layers mb-4 d-block"></span>
+                                <h3>Front-End</h3>
+                                <div>
+                                    <h6>HTML 5</h6>
+                                    <h6>CSS 3</h6>
+                                    <h6>Bootstrap 4</h6>
+                                    <h6>Semantic UI</h6>
+                                    <h6>React-Bootstrap</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 mb-5 text-center" data-aos="fade-up" data-aos-delay="100">
+                            <div className="service">
+                                <span className="icon icon-badge mb-4 d-block"></span>
+                                <h3>JavaScript</h3>
+                                <div>
+                                    <h6>React.js</h6>
+                                    <h6>JavaScript</h6>
+                                    <h6>JQuery/ ES6+</h6>
+                                    <h6>React.js</h6>
+                                    <h6>JSON</h6>
+                                    <h6>AJAX </h6>
+                                    <h6>APIs</h6>
+                                    <h6>DOM</h6>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6 mb-5 text-center" data-aos="fade-up" data-aos-delay="200">
+                            <div className="service">
+                                <span className="icon icon-magnet mb-4 d-block color"></span>
+                                <h3>Back-End</h3>
+                                <div>
+                                    <h6>Node.js</h6>
+                                    <h6>Express.js</h6>
+                                    <h6>MVC</h6>
+                                    <h6>MySQL</h6>
+                                    <h6>MongoDB</h6>
+                                    <h6>Sequelize</h6>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
- */}
 
-            <div class="section portfolio-section">
-                <div class="container space">
-                    <div class="row mb-5 justify-content-center">
-                        <div class="col-md-8 text-center">
-                            <h2 class="mb-4 section-title">Previous works</h2>
+
+            <div className="section portfolio-section">
+                <div className="container space">
+                    <div className="row mb-5 justify-content-center">
+                        <div className="col-md-8 text-center">
+                            <h2 className="mb-4 section-title">Previous works</h2>
                             <p>Take a look at my previous projects, with a Full-stack cicle. </p>
                         </div>
                     </div>
                 </div>
-                <div class="section">
-                    <div class="container">
-                        <div class="row">
-
-                            <ProjectCard
-                                link="https://tripoint.herokuapp.com/"
-                                title="TriPoint"
-                                tools="Node/Express/MySQL/Sequelize/Handlebars.js/ JQuery"
-                                description1="MySQL db combined with a 3rd party API."
-                                description2="Sequelize and Express loaded app"
-                                image="https://res.cloudinary.com/dddtjci2s/image/upload/v1589858022/computer-desk-196658_uh4wwv.jpg" />
-                            <ProjectCard
+                <div className="section">
+                    <div className="container">
+                        <div className="row">
+                            <CardBlock
                                 link="https://ellen0404.github.io/Employee-Directory_ED/"
                                 title="Employee Directory"
                                 tools="React/ ES6/ AJAX/ Semantic UI"
                                 description1="React app to view, search, filter,"
                                 description2=" delete employees"
-                                image="https://res.cloudinary.com/dddtjci2s/image/upload/v1589857801/technical-plan-drawn-on-paper-located-near-tablet-and-laptop-3850240_nsuiaz.jpg" />
+                                image="https://res.cloudinary.com/dddtjci2s/image/upload/v1590539293/blur-bottle-bright-building-273238_p4efil.jpg" />
+                            <CardBlock
+                                link="https://tripoint.herokuapp.com/"
+                                title="TriPoint"
+                                tools="Node/Express/MySQL/Sequelize/Handlebars.js/ JQuery"
+                                description1="MySQL db combined with a 3rd party API."
+                                description2="Sequelize and Express loaded app"
+                                image="https://res.cloudinary.com/dddtjci2s/image/upload/v1590539465/green-mercedes-benz-amg-952338_u61au5.jpg" />
+                            <CardBlock
+                                link="https://lit-chamber-43751.herokuapp.com"
+                                title="WorkOut Tracker"
+                                tools="Node/Express/Mongo db/ AJAX/ JavaScript/ CSS"
+                                description1="Mongo DB tracks you"
+                                description2="workout progress"
+                                image="https://res.cloudinary.com/dddtjci2s/image/upload/v1590539393/two-dumbbells-669580_1_itdwli.jpg" />
                         </div>
                     </div>
                 </div>
+                <br />
             </div>
             <ContactFooter />
             <Footer />

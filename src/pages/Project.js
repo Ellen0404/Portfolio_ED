@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../components/Nav";
-import ProjectCard from "../components/ProjectCard";
+
 import CardBlock from "../components/CardBlock";
 
 import Footer from "../components/Footer";
@@ -17,7 +17,7 @@ const Project = () => {
                         <div class="col-md-8 text-center">
                             <br />
                             <h2 class="mb-4 section-title">Selected work</h2>
-                            <p>Hera are some of my projects. A lot of Java Script , API calls, working on a Back-End and of
+                            <p>Here are  are some of my projects. A lot of Java Script , API calls, working on a Back-End and of
                             course
                         some styling. Each project has a list of a developing tools I've used. </p>
                         </div>
@@ -65,7 +65,7 @@ const Project = () => {
                             <CardBlock
                                 link="https://calm-headland-85094.herokuapp.com/"
                                 title="Note Taker"
-                                tools="NODE.js/ Express.js/ JSON/ jQuery/ AJAX"
+                                tools="NODE.js/ Express.js/ JSON"
                                 description1="An application that can be used to write, save,"
                                 description2="and delete notes."
                                 image="https://res.cloudinary.com/dddtjci2s/image/upload/v1590534599/silver-iphone-x-beside-succulent-plant-1069798_jjfcqk.jpg"

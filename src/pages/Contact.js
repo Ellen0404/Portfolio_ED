@@ -3,18 +3,23 @@ import React, { useState } from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { Container } from "react-bootstrap";
+import { useSpring, animated, useTransition } from 'react-spring'
+import range from 'lodash-es/range'
 
-import { useTransition, animated } from 'react-spring'
 
 
 const Contact = () => {
-    // const [items, set] = useState(["hello", "my", "phone"])
-    // const transitions = useTransition(items, item => item.key, {
-    //     from: { transform: 'translate3d(0,-40px,0)' },
-    //     enter: { transform: 'translate3d(0,0px,0)' },
-    //     leave: { transform: 'translate3d(0,-40px,0)' },
-    // })
+    const items = range(3)
+    const interp = i => r => `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`
 
+    const { radians } = useSpring({
+        to: async next => {
+            while (1) await next({ radians: 2 * Math.PI })
+        },
+        from: { radians: 0 },
+        config: { duration: 3500 },
+        reset: true,
+    })
     const [contact, setContact] = useState({
         name: "",
         phone: "",
@@ -41,13 +46,17 @@ const Contact = () => {
     return (
         <>
             <Nav />
-            {/* <Container>
-                {transitions.map(({ item, props, key }) =>
-                    <animated.div key={key} style={props}>
-                        {item.text}
-                    </animated.div>
-                )}
-            </Container> */}
+            <br></br>
+            <Container>
+                <div className="row">
+                    {items.map(i =>
+                        <animated.div key={i}
+                            className="script-bf-box"
+                            style={{ transform: radians.interpolate(interp(i)) }}>
+                            HElOOOOOOO
+                         </animated.div>)}
+                </div>
+            </Container>
             <Container>
                 <br></br>
                 <div className="ui small form" >

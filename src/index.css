@@ -121,3 +121,23 @@ nav.navbar.color{
   opacity:1;
   visibility:visible
 }
+
+.script-bf-box {
+  width: 300px;
+  height: 100px;
+  background: black;
+  margin: 5px;
+  will-change: transform;
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: black;
+  background: #f0f0f0;
+}
+
+.script-bf-box:hover {
+  background: #a0b603;
+}
