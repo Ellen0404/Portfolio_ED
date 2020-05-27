@@ -15,9 +15,10 @@ function App() {
     <Router >
 
       <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/project" component={Project} />
-        <Route path="/contact" component={Contact} />
+        {/* Route exact path={process.env.PUBLIC_URL + "/"} render={ Welcome } */}
+        <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+        <Route exact path={process.env.PUBLIC_URL + "/project"} component={Project} />
+        <Route exact path={process.env.PUBLIC_URL + "/contact"} component={Contact} />
         <Route component={NoMatch} />
 
       </Switch>
