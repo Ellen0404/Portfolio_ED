@@ -81,7 +81,7 @@ const Home = () => {
                         <div className="col-md-6 order-md-2" data-aos="fade-up" data-aos-delay="400">
                             <figure className="img-dotted-bg">
                                 <br></br>
-                                <img src="/images/EllenDphoto_webformat.jpg" width="300" height="400" alt="altimg"
+                                <img src="/public/images/EllenDphoto_webformat.jpg" width="300" height="400" alt="altimg"
                                     className="img-fluid" />
                             </figure>
                         </div>
