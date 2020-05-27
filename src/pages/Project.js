@@ -11,21 +11,21 @@ const Project = () => {
         <>
             <Nav />
 
-            <div class="section portfolio-section">
-                <div class="container space2">
-                    <div class="row mb-5 justify-content-center">
-                        <div class="col-md-8 text-center">
+            <div className="section portfolio-section">
+                <div className="container space2">
+                    <div className="row mb-5 justify-content-center">
+                        <div className="col-md-8 text-center">
                             <br />
-                            <h2 class="mb-4 section-title">Selected work</h2>
+                            <h2 className="mb-4 section-title">Selected work</h2>
                             <p>Here are  are some of my projects. A lot of Java Script , API calls, working on a Back-End and of
                             course
                         some styling. Each project has a list of a developing tools I've used. </p>
                         </div>
                     </div>
                 </div>
-                <div class="section">
-                    <div class="container">
-                        <div class="row">
+                <div className="section">
+                    <div className="container">
+                        <div className="row">
                             <CardBlock
                                 link="https://ellen0404.github.io/Weather-Dashboard_ED/"
                                 title="Weather Dashboard"
@@ -53,7 +53,7 @@ const Project = () => {
                         </div>
                         <br></br>
                         <br></br>
-                        <div class="row">
+                        <div className="row">
                             <CardBlock
                                 link="https://github.com/Ellen0404/Employee_tracker_MYSQL_ED"
                                 title="Employee tracker"

@@ -125,19 +125,25 @@ nav.navbar.color{
 .script-bf-box {
   width: 300px;
   height: 100px;
-  background: black;
+  /* background: black; */
   margin: 5px;
   will-change: transform;
   position: relative;
-  
+  font-size: 25px;
+  text-shadow: 2px 2px 4px #b3b603;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  color: black;
-  background: #f0f0f0;
+  color: rgb(116, 116, 109);
+  /* background: #f0f0f0; */
 }
 
 .script-bf-box:hover {
-  background: #a0b603;
+  color: #a0b603;
+  /* background: #a0b603; */
+}
+
+.basic:hover{
+  background-color:#a0b603;
 }

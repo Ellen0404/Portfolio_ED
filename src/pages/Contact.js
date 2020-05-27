@@ -2,24 +2,13 @@ import React, { useState } from "react";
 
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import { Container } from "react-bootstrap";
-import { useSpring, animated, useTransition } from 'react-spring'
-import range from 'lodash-es/range'
+import AnimatedBlock from "../components/AnimatedBlock";
+import { Container, Row } from "react-bootstrap";
 
 
 
 const Contact = () => {
-    const items = range(3)
-    const interp = i => r => `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`
 
-    const { radians } = useSpring({
-        to: async next => {
-            while (1) await next({ radians: 2 * Math.PI })
-        },
-        from: { radians: 0 },
-        config: { duration: 3500 },
-        reset: true,
-    })
     const [contact, setContact] = useState({
         name: "",
         phone: "",
@@ -47,15 +36,16 @@ const Contact = () => {
         <>
             <Nav />
             <br></br>
+            <br></br>
             <Container>
-                <div className="row">
-                    {items.map(i =>
-                        <animated.div key={i}
-                            className="script-bf-box"
-                            style={{ transform: radians.interpolate(interp(i)) }}>
-                            HElOOOOOOO
-                         </animated.div>)}
-                </div>
+                <Row>
+                    <AnimatedBlock
+                        address="Greenwood Village, CO"
+                        phone="+1 605 545 5990"
+                        email="vhelen0404@gmail.com"
+                    />
+                </Row>
+
             </Container>
             <Container>
                 <br></br>

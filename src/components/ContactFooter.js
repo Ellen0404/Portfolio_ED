@@ -12,7 +12,7 @@ const ContactFooter = () => {
                             <p class="text-white mb-4">Contact me with any questions and ideas</p>
 
                             <p class="mb-0" data-aos="fade-up" data-aos-delay="200"><a href="contact"
-                                class="ui olive basic button px-4 py-3">Get In Touch!</a></p>
+                                class="ui olive inverted  button">Get In Touch!</a></p>
                         </div>
                     </div>
 
